@@ -1,0 +1,92 @@
+body {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+#app {
+    text-align: center;
+    position: relative;
+}
+
+/* #app form {
+    margin-left: 10px;
+} */
+
+#app form input#inputTodo {
+    border: 1px solid black;
+    width: 500px;
+    height: 35px;
+}
+
+#app input#submit {
+    border: 1px solid black;
+    width: 120px;
+    height: 40px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#todoItemBlocContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 55px;
+}
+
+#todoItemBlocContainer>div {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+}
+
+#todoItemBlocContainer>div div:not(:first-child) {
+    /* width: 50px; */
+    color: white;
+    font-weight: bold;
+    /* flex-grow: 2; */
+    text-transform: uppercase;
+    /* border: 1px solid black; */
+    padding: 3px;
+    width: 70px;
+    box-shadow: 1px 1px 5px black;
+}
+
+.updateBt {
+    background-color: green;
+    cursor: pointer
+}
+
+.saveBt {
+    background-color: orange;
+    cursor: pointer
+}
+
+.deleteBt {
+    background-color: red;
+    cursor: pointer
+}
+
+#todoItemBlocContainer>div div:first-child {
+    /* flex-grow: 3; */
+    width: 440px;
+}
+
+#todoItemBlocContainer>div div:first-child input {
+    width: 100%;
+}
